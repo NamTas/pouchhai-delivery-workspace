@@ -1,0 +1,20 @@
+{
+  "source": "https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce",
+  "publisher": "Olist",
+  "license": "CC BY-NC-SA 4.0",
+  "license_url": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+  "downloaded_at": "2026-10-28T14:19:12.852654+00:00",
+  "orders_source_sha256": "8df58ef3d2d7e9944010f7beecd9b75367f5588ec6e3c91cec19ae3345ef9ecf",
+  "subset_sha256": "04fb4baf4e28d18aaf513530740be3887baf972f2de65a001a9f58454e6d19d7",
+  "as_of": "2018-08-31 23:59:59",
+  "purchase_window": "2018-07-01 through snapshot",
+  "selection": "Sort eligible IDs ascending within each group; select 40 overdue, 60 delivered-late, 20 on-time.",
+  "rows": 120,
+  "available_in_window": {
+    "Overdue in snapshot": 198,
+    "Delivered late": 547,
+    "On time": 9909
+  },
+  "notice": "Historical Brazilian proxy data, not Bangladeshi orders or cold-chain measurements. Exception-enriched convenience sample; do not infer population rates. Workflow states and notes are local demo records, not real customer tickets.",
+  "transformations": "Join customer city/state only; exclude customer identifiers, reviews and payments. Mask carrier/delivery events after the cutoff. Date-based lateness; nights/weekends included. Exclude canceled/unavailable statuses because cancellation dates are absent; original terminal statuses may create selection bias."
+}
